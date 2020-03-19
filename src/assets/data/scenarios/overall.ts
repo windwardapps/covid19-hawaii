@@ -7,6 +7,12 @@ export interface OverallScenario {
 
 const globalScenarios: OverallScenario[] = [
   {
+    name: 'Hawaii',
+    containmentScenario: 'Moderate mitigation',
+    epidemiologicalScenario: 'Moderate/Tropical',
+    populationScenario: 'Hawaii',
+  },
+  {
     name: 'Default',
     containmentScenario: 'Moderate mitigation',
     epidemiologicalScenario: 'Moderate/North',

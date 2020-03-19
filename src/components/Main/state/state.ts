@@ -37,7 +37,8 @@ export interface State {
   }
 }
 
-export const DEFAULT_OVERALL_SCENARIO_NAME = 'Default'
+// export const DEFAULT_OVERALL_SCENARIO_NAME = 'Default'
+export const DEFAULT_OVERALL_SCENARIO_NAME = 'Hawaii'
 export const CUSTOM_SCENARIO_NAME = 'Custom'
 
 export const defaultOverallScenarioName = DEFAULT_OVERALL_SCENARIO_NAME
