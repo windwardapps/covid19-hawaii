@@ -19,7 +19,7 @@ import { State } from '../state/state'
 const countries = Object.keys(countryAgeDistribution)
 const countryOptions = countries.map(country => ({ value: country, label: country }))
 const caseCountOptions = Object.keys(countryCaseCounts).map(country => ({ value: country, label: country }))
-caseCountOptions.push({value:'none', label:"None"})
+caseCountOptions.push({ value: 'none', label: 'None' })
 
 export interface ScenarioCardPopulationProps {
   scenarioState: State
@@ -91,14 +91,22 @@ function ScenarioCardPopulation({ scenarioState, errors, touched, scenarioDispat
         errors={errors}
         touched={touched}
       />
-      <FormDropdown<string>
+      <FormSpinBox
+        identifier="population.cases"
+        label="Confirmed cases"
+        help="Number of confirmed cases."
+        step={1}
+        errors={errors}
+        touched={touched}
+      />
+      {/* <FormDropdown<string>
         identifier="population.cases"
         label="Confirmed cases"
         help="Select region for which to plot confirmed case and death counts."
         options={caseCountOptions}
         errors={errors}
         touched={touched}
-      />
+      /> */}
       <FormDatePicker
         identifier="simulation.simulationTimeRange"
         label="Simulation time range"
