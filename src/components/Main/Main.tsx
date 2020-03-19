@@ -80,8 +80,11 @@ function Main() {
     }
     // TODO: check the presence of the current counry
     // TODO: type cast the json into something
+
     const ageDistribution = countryAgeDistribution[params.population.country]
-    const caseCounts      = countryCaseCounts[scenarioState.population.data.cases] || []
+    // const caseCounts = countryCaseCounts[scenarioState.population.data.cases] || []
+    // const caseCounts = countryCaseCounts['United States'] || []
+    const caseCounts = []
     const containmentData = scenarioState.containment.data.reduction
 
     const newResult = await run(paramsFlat, severity, ageDistribution, containmentData)
@@ -119,7 +122,7 @@ function Main() {
                   </Col>
 
                   <Col lg={8} xl={6} className="py-1 px-1">
-                    <ResultsCard canRun={canRun} severity={severity} result={result} caseCounts={empiricalCases}/>
+                    <ResultsCard canRun={canRun} severity={severity} result={result} caseCounts={empiricalCases} />
                   </Col>
                 </Row>
               </Form>
