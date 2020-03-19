@@ -1,17 +1,22 @@
+# COVID-19 Scenarios Hawaii
+
+This project was adapted from https://github.com/neherlab/covid19_scenarios to show Hawaii specific information.
+
 # COVID-19 Scenarios
 
 > Tool that models hospital demand during COVID-19 outbreak
 
 ### Parameters
+
 Parameters fall into three different categories
 
-  * population parameters
-  * epidemiological parameters
-  * clinical parameters
+- population parameters
+- epidemiological parameters
+- clinical parameters
 
-Most parameters can be adjust in the tool and for many of them we provide presets.
-The presets for populations can be found in the file [data/populationData.tsv](data/populationData.tsv).
-For administrative divisions below the level of countries, our convention is to prefix the name with the two letter country code as in `CH-Zürich`.
+Most parameters can be adjust in the tool and for many of them we provide presets. The presets for populations can be
+found in the file [data/populationData.tsv](data/populationData.tsv). For administrative divisions below the level of
+countries, our convention is to prefix the name with the two letter country code as in `CH-Zürich`.
 
 ### Development
 
@@ -34,9 +39,8 @@ yarn dev
 
 ```
 
-This will trigger the development server and build process. Wait for the build
-to finish, then navigate to `http://localhost:3000/covid19/` in a browser (last 5 version
-of Chrome or Firefox are supported in dev mode)
+This will trigger the development server and build process. Wait for the build to finish, then navigate to
+`http://localhost:3000/covid19/` in a browser (last 5 version of Chrome or Firefox are supported in dev mode)
 
 Hit Ctrl+C in the terminal to shutdown.
 
